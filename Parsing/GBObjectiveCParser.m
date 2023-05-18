@@ -300,10 +300,10 @@
 		__block BOOL parseAttribute = NO;
 		__block NSUInteger parenthesisDepth = 0;
 		[self.tokenizer consumeTo:@";" usingBlock:^(PKToken *token, BOOL *consume, BOOL *stop) {
-			if ([token matches:@"__attribute__"] || [token matches:@"DEPRECATED_ATTRIBUTE"]) {
+			if ([token matches:@"__attribute__"] || [token matches:@"DEPRECATED_ATTRIBUTE"] || [token matches:@"NS_SWIFT_UNAVAILABLE"] || [token matches:@"NS_REFINED_FOR_SWIFT"]) {
 				parseAttribute = YES;
 				parenthesisDepth = 0;
-			} else if (parseAttribute) {
+            } else if (parseAttribute) {
 				if ([token matches:@"("]) {
 					parenthesisDepth++;					
 				} else if ([token matches:@")"]) {
@@ -823,7 +823,15 @@
                 *stop = YES;
                 return;
             }
-            
+            if ([token matches:@"NS_SWIFT_UNAVAILABLE"]) {
+                *stop = YES;
+                return;
+            }
+            if ([token matches:@"NS_REFINED_FOR_SWIFT"]) {
+                *stop = YES;
+                return;
+            }
+
 			if ([token matches:@"__attribute__"] || [token matches:@"DEPRECATED_ATTRIBUTE"]) {
 				parseAttribute = YES;
 				parenthesisDepth = 0;
