@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-AppledocTests/Pods-AppledocTests-resources.sh
+${PODS_ROOT}/GHUnit/Classes-MacOSX/UI/GHTestApp.xib
+${PODS_ROOT}/GHUnit/Classes-MacOSX/UI/GHTestView.xib
+${PODS_ROOT}/GHUnit/Classes-MacOSX/UI/GHTestWindow.xib
