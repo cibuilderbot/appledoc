@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		31DBC2AF18060EFF002AFE9F /* GBDocSetFinalizeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DBC2AD18060C3C002AFE9F /* GBDocSetFinalizeGenerator.m */; };
 		425CC22E20488BEA0099B364 /* GBHTMLOutputGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 425CC22D20488BEA0099B364 /* GBHTMLOutputGenerator.m */; };
 		425CC23120488D630099B364 /* GBMarkdownOutputGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 425CC23020488D630099B364 /* GBMarkdownOutputGenerator.m */; };
-		4CFB67FB906500574239C6AE /* libPods-appledoc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 493739BF5A98CB9200764326 /* libPods-appledoc.a */; };
 		7307B311124A1929007EC6B8 /* GBObjectiveCParser-SectionsParsingTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 7307B310124A1929007EC6B8 /* GBObjectiveCParser-SectionsParsingTesting.m */; };
 		7307B31A124A1C2E007EC6B8 /* GBMethodSectionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7307B319124A1C2E007EC6B8 /* GBMethodSectionData.m */; };
 		7307B31B124A1C2E007EC6B8 /* GBMethodSectionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7307B319124A1C2E007EC6B8 /* GBMethodSectionData.m */; };
@@ -176,6 +175,7 @@
 		B4D1FFE415FF5F05009736E2 /* DDEmbeddedDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D1FFD215FF5F05009736E2 /* DDEmbeddedDataReader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B4D1FFE515FF5F05009736E2 /* DDXcodeProjectFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D1FFD415FF5F05009736E2 /* DDXcodeProjectFile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B4D1FFE615FF5F05009736E2 /* DDXcodeProjectFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D1FFD415FF5F05009736E2 /* DDXcodeProjectFile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B565CBCA750483452FD66E9C /* libPods-appledoc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E07635E95729066005DA1BDA /* libPods-appledoc.a */; };
 		B8BBC0F7196DFAEB006F239D /* dd_getopt_long-fbsd.m in Sources */ = {isa = PBXBuildFile; fileRef = DA77C690196BEB2C0018A48F /* dd_getopt_long-fbsd.m */; };
 		C8005C9D1B9E016400F91ECC /* GBCommentsProcessor+CodeBlockProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = C8005C9C1B9E016400F91ECC /* GBCommentsProcessor+CodeBlockProcessing.m */; };
 		C8005C9E1B9E016400F91ECC /* GBCommentsProcessor+CodeBlockProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = C8005C9C1B9E016400F91ECC /* GBCommentsProcessor+CodeBlockProcessing.m */; };
@@ -207,7 +207,6 @@
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		14017320E4AC18DD1F56E467 /* Pods-AppledocTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppledocTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppledocTests/Pods-AppledocTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D6142603838676421CD0FBE /* Pods-appledoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appledoc.release.xcconfig"; path = "Pods/Target Support Files/Pods-appledoc/Pods-appledoc.release.xcconfig"; sourceTree = "<group>"; };
 		31DBC2AC18060C3C002AFE9F /* GBDocSetFinalizeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBDocSetFinalizeGenerator.h; sourceTree = "<group>"; };
 		31DBC2AD18060C3C002AFE9F /* GBDocSetFinalizeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBDocSetFinalizeGenerator.m; sourceTree = "<group>"; };
 		381DEFAF9452E40F08F040D5 /* Pods-AppledocTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppledocTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppledocTests/Pods-AppledocTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,8 +214,6 @@
 		425CC22D20488BEA0099B364 /* GBHTMLOutputGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBHTMLOutputGenerator.m; sourceTree = "<group>"; };
 		425CC22F20488D630099B364 /* GBMarkdownOutputGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GBMarkdownOutputGenerator.h; sourceTree = "<group>"; };
 		425CC23020488D630099B364 /* GBMarkdownOutputGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GBMarkdownOutputGenerator.m; sourceTree = "<group>"; };
-		493739BF5A98CB9200764326 /* libPods-appledoc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appledoc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C75E5BD2E1BFF5CD130FE5A /* Pods-appledoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appledoc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-appledoc/Pods-appledoc.debug.xcconfig"; sourceTree = "<group>"; };
 		720DA055AE3DBDBE5E8FF024 /* libPods-AppledocTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppledocTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7307B310124A1929007EC6B8 /* GBObjectiveCParser-SectionsParsingTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GBObjectiveCParser-SectionsParsingTesting.m"; sourceTree = "<group>"; };
 		7307B318124A1C2E007EC6B8 /* GBMethodSectionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBMethodSectionData.h; sourceTree = "<group>"; };
@@ -386,7 +383,9 @@
 		73FC742C11FE274300AAD0B9 /* GBMethodArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBMethodArgument.m; sourceTree = "<group>"; };
 		73FC743511FE2CEB00AAD0B9 /* GBMethodDataTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBMethodDataTesting.m; sourceTree = "<group>"; };
 		75C6C0D416CAA8D900E254F7 /* XcodeIntegrationScript.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XcodeIntegrationScript.markdown; sourceTree = "<group>"; };
+		79E50B8FB8A7FACA5D0D16E1 /* Pods-appledoc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appledoc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-appledoc/Pods-appledoc.debug.xcconfig"; sourceTree = "<group>"; };
 		86466CAF1AAA1477002B003C /* GObjectiveCParser-BlockParsingTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GObjectiveCParser-BlockParsingTesting.m"; sourceTree = "<group>"; };
+		8CA149E76832FF090E66EF5C /* Pods-appledoc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appledoc.release.xcconfig"; path = "Pods/Target Support Files/Pods-appledoc/Pods-appledoc.release.xcconfig"; sourceTree = "<group>"; };
 		8DD76FA10486AA7600D96B5E /* appledoc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = appledoc; sourceTree = BUILT_PRODUCTS_DIR; };
 		9328CE2BEBC125BF215A96C1 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = Application/Localizable.strings; sourceTree = "<group>"; };
 		B4D1FFD115FF5F05009736E2 /* DDEmbeddedDataReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDEmbeddedDataReader.h; sourceTree = "<group>"; };
@@ -409,6 +408,7 @@
 		D4B844F017A122A40012C1DC /* GBEnumConstantProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBEnumConstantProvider.h; sourceTree = "<group>"; };
 		D4B844F117A122A50012C1DC /* GBEnumConstantProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBEnumConstantProvider.m; sourceTree = "<group>"; };
 		DA77C690196BEB2C0018A48F /* dd_getopt_long-fbsd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "dd_getopt_long-fbsd.m"; sourceTree = "<group>"; };
+		E07635E95729066005DA1BDA /* libPods-appledoc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-appledoc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59056EC16C1C6DC00391620 /* publish */ = {isa = PBXFileReference; lastKnownFileType = folder; path = publish; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -435,7 +435,7 @@
 				73E4A42714F51EC400C0620F /* Cocoa.framework in Frameworks */,
 				73F5689D12A2244300A72BB2 /* SystemConfiguration.framework in Frameworks */,
 				73F568D312A22CFF00A72BB2 /* CoreServices.framework in Frameworks */,
-				4CFB67FB906500574239C6AE /* libPods-appledoc.a in Frameworks */,
+				B565CBCA750483452FD66E9C /* libPods-appledoc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,8 +483,8 @@
 			children = (
 				14017320E4AC18DD1F56E467 /* Pods-AppledocTests.debug.xcconfig */,
 				381DEFAF9452E40F08F040D5 /* Pods-AppledocTests.release.xcconfig */,
-				4C75E5BD2E1BFF5CD130FE5A /* Pods-appledoc.debug.xcconfig */,
-				2D6142603838676421CD0FBE /* Pods-appledoc.release.xcconfig */,
+				79E50B8FB8A7FACA5D0D16E1 /* Pods-appledoc.debug.xcconfig */,
+				8CA149E76832FF090E66EF5C /* Pods-appledoc.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 			isa = PBXGroup;
 			children = (
 				720DA055AE3DBDBE5E8FF024 /* libPods-AppledocTests.a */,
-				493739BF5A98CB9200764326 /* libPods-appledoc.a */,
+				E07635E95729066005DA1BDA /* libPods-appledoc.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -908,7 +908,6 @@
 				733EA123122BDD020060CBDE /* Frameworks */,
 				D818BACD15203A9E00B26451 /* CopyFiles */,
 				9E9653391791A3DA0086251B /* ShellScript */,
-				17452C58DBF86D78C505A804 /* [CP] Embed Pods Frameworks */,
 				0240AEAF513A8EEA39D95E47 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -924,12 +923,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB927408733DD40010E9CD /* Build configuration list for PBXNativeTarget "appledoc" */;
 			buildPhases = (
-				8B30B0E4E4A07773AF166FB1 /* [CP] Check Pods Manifest.lock */,
+				2BFE23E445DC6E08488DE21F /* [CP] Check Pods Manifest.lock */,
 				B4D1FFE715FF60B7009736E2 /* ShellScript */,
 				8DD76F990486AA7600D96B5E /* Sources */,
 				8DD76F9B0486AA7600D96B5E /* Frameworks */,
 				B4D1FFF515FF637A009736E2 /* ShellScript */,
-				3037AFD851D1C60D4B664697 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -951,7 +949,7 @@
 				ORGANIZATIONNAME = "Gentle Bytes";
 			};
 			buildConfigurationList = 1DEB927808733DD40010E9CD /* Build configuration list for PBXProject "appledoc" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -988,61 +986,32 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AppledocTests/Pods-AppledocTests-resources.sh",
-				"${PODS_ROOT}/GHUnit/Classes-MacOSX/UI/GHTestApp.xib",
-				"${PODS_ROOT}/GHUnit/Classes-MacOSX/UI/GHTestView.xib",
-				"${PODS_ROOT}/GHUnit/Classes-MacOSX/UI/GHTestWindow.xib",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppledocTests/Pods-AppledocTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppledocTests/Pods-AppledocTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppledocTests/Pods-AppledocTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppledocTests/Pods-AppledocTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		17452C58DBF86D78C505A804 /* [CP] Embed Pods Frameworks */ = {
+		2BFE23E445DC6E08488DE21F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppledocTests/Pods-AppledocTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3037AFD851D1C60D4B664697 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-appledoc/Pods-appledoc-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8B30B0E4E4A07773AF166FB1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-appledoc-checkManifestLockResult.txt",
 			);
@@ -1072,10 +1041,11 @@
 			inputPaths = (
 			);
 			outputPaths = (
+				"$(PROJECT_DIR)/default_templates.zip",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n\ncd Templates\nzip -r default_templates.zip .\nmv default_templates.zip \"$PROJECT_DIR\"\ncd ..";
+			shellScript = "#!/bin/bash\n\ncd Templates\nzip -r default_templates.zip .\nmv default_templates.zip \"$PROJECT_DIR\"\ncd ..\n";
 		};
 		B4D1FFF515FF637A009736E2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1083,12 +1053,13 @@
 			files = (
 			);
 			inputPaths = (
+				"$(PROJECT_DIR)/default_templates.zip",
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm default_templates.zip";
+			shellScript = "rm default_templates.zip\n";
 		};
 		DF3115CCC2D4D3C32EE5F33D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1298,7 +1269,7 @@
 /* Begin XCBuildConfiguration section */
 		1DEB927508733DD40010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C75E5BD2E1BFF5CD130FE5A /* Pods-appledoc.debug.xcconfig */;
+			baseConfigurationReference = 79E50B8FB8A7FACA5D0D16E1 /* Pods-appledoc.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1318,7 +1289,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-sectcreate",
@@ -1332,7 +1303,7 @@
 		};
 		1DEB927608733DD40010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D6142603838676421CD0FBE /* Pods-appledoc.release.xcconfig */;
+			baseConfigurationReference = 8CA149E76832FF090E66EF5C /* Pods-appledoc.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -1350,7 +1321,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-sectcreate",
